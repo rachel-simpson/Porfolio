@@ -1,0 +1,62 @@
+/* reset universal values */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* set page standards */
+
+html {
+  background-color: white;
+  color: black;
+  font-family: 'Muli', cursive;
+  font-size: 10px;
+  text-align: center;
+}
+
+/* style header section */
+
+header {
+  width: 100%;
+}
+
+h1 {
+  background: linear-gradient(#fff, #fff9fa);
+  border: 1px solid black;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 48px;
+  letter-spacing: 15px;
+  padding: 50px 0;
+}
+
+nav {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  position: sticky;
+  z-index: 1;
+}
+
+nav a {
+  color: black;
+  font-size: 24px;
+  font-weight: lighter;
+  letter-spacing: 8px;
+  margin: 0 80px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  border-bottom: 1px solid darkgray;
+  color: darkgray;
+  font-weight: normal;
+}
+
+.logo {
+  margin: 0 auto;
+  padding: 50px 0 0 0;
+  width: 70%;
+}
