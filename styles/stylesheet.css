@@ -17,26 +17,25 @@ html {
 
 /* style header section */
 
-header {
-  width: 100%;
-}
-
-h1 {
-  background: linear-gradient(#fff, #fff9fa);
-  border: 1px solid black;
+header h1 {
+  border: 2px solid hsla(187, 20%, 40%, 1);
   font-family: 'Permanent Marker', cursive;
   font-size: 48px;
   letter-spacing: 15px;
   padding: 50px 0;
+  margin: 50px auto 0 auto;
+  width: 70%;
 }
 
 nav {
   background-color: white;
+  border-bottom: 2px solid hsla(187, 15%, 50%, 1);
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100px;
+  line-height: 170px;
   position: sticky;
+  top: 0;
   z-index: 1;
 }
 
@@ -55,8 +54,61 @@ nav a:hover {
   font-weight: normal;
 }
 
-.logo {
-  margin: 0 auto;
-  padding: 50px 0 0 0;
+/* meet me section */
+
+img {
+  height: 300px;
+  width: 450px;
+}
+
+.meet-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 500px;
   width: 70%;
+  margin: 30px auto;
+}
+
+.bio {
+  background-color: hsla(187, 20%, 95%, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: lighter;
+  height: 300px;
+  width: 450px;
+  line-height: 50px;
+}
+
+.bio p {
+  padding: 0 40px;
+  text-align: center;
+}
+
+#meet {
+  background-color: hsla(187, 40%, 16%, 1);
+  border-top: 1px solid hsla(187, 15%, 50%, 1);
+  border-bottom: 3px solid hsla(187, 15%, 50%, 1);
+}
+
+/* portfolio section */
+
+.portfolio-container {
+  background-color: hsla(187, 40%, 95%, 1);
+  display: flex;
+  height: 1000px;
+  margin: 50px auto 50px auto;
+  width: 80%;
+}
+
+#portfolio h1 {
+  border: 1px solid hsla(187, 20%, 40%, 1);
+  font-family: 'Permanent Marker', cursive;
+  font-size: 36px;
+  letter-spacing: 12px;
+  margin: 50px auto;
+  padding: 30px 0;
+  width: 40%;
 }
