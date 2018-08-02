@@ -16,7 +16,7 @@
 
   <!-- sticky navigation bar -->
   <nav>
-    <span><a href="#meet">MEET</a></span>
+    <span><a href="#meet-offset">MEET</a></span>
     <span><a href="#portfolio">PORTFOLIO</a></span>
     <span><a href="#contact">CONTACT</a></span>
   </nav>
@@ -24,6 +24,7 @@
   <!-- about me section -->
 
   <section id="meet">
+    <span id="meet-offset"></span>
     <div class="meet-container">
       <div class="photo">
         <img src="resources/images/train.jpg" alt="Rachel Simpson, Japan 2015">
@@ -39,15 +40,33 @@
   <section id="portfolio">
     <h1>Portfolio.</h1>
     <div class="portfolio-container">
-      <img src="./resources/images/excursion.jpg" alt="Excursion Project">
-      <img src="./resources/images/mytimes.PNG" alt="MYTimes Project">
-      <img src="./resources/images/teacozy.jpg" alt="Tea Cozy Project">
-      <img src="./resources/images/the-flatiron-building.png" alt="Broadway Project">
+      <div class="project" id="excursion">
+
+        <a href="https://rachel-simpson.github.io/Excursion/" target="_blank">
+          <p>EXCURSION</p>
+          <img src="./resources/images/excursion.jpg" alt="Excursion Project" class="project">
+        </a>
+      </div>
+      <div class="project" id="mytimes">
+        <a href="https://rachel-simpson.github.io/MyTimes/" target="_blank">
+          <p>MY TIMES</p>
+          <img src="./resources/images/mytimes.PNG" alt="MYTimes Project" class="project">
+        </a>
+      </div>
+      <div class="project" id="teacozy">
+        <a href="https://rachel-simpson.github.io/TeaCozy/" target="_blank">
+          <p>TEA COZY</p>
+          <img src="./resources/images/teacozy.jpg" alt="Tea Cozy Project" class="project">
+        </a>
+      </div>
+      <div class="project" id="broadway">
+        <a href="https://rachel-simpson.github.io/Broadway/" target="_blank">
+          <p>BROADWAY</p>
+          <img src="./resources/images/the-flatiron-building.png" alt="Broadway Project" class="project">
+        </a>
+      </div>
     </div>
   </section>
-
-
-
 
 </body>
 </html>

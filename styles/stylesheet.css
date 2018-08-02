@@ -54,11 +54,15 @@ nav a:hover {
   font-weight: normal;
 }
 
+#meet-offset {
+  position: absolute;
+  top: -178px;
+}
+
 /* meet me section */
 
 img {
-  height: 300px;
-  width: 450px;
+  max-height: 300px;
 }
 
 .meet-container {
@@ -72,25 +76,27 @@ img {
 
 .bio {
   background-color: hsla(187, 20%, 95%, 1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  font-weight: lighter;
   height: 300px;
   width: 450px;
-  line-height: 50px;
+  position: relative;
 }
 
 .bio p {
-  padding: 0 40px;
-  text-align: center;
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: 2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
 }
 
 #meet {
   background-color: hsla(187, 40%, 16%, 1);
   border-top: 1px solid hsla(187, 15%, 50%, 1);
   border-bottom: 3px solid hsla(187, 15%, 50%, 1);
+  position: relative;
 }
 
 /* portfolio section */
@@ -101,9 +107,39 @@ img {
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  /* height: 1000px; */
+  height: 600px;
   margin: 50px auto 50px auto;
   width: 80%;
+}
+
+.project {
+  height: 300px;
+  width: 300px;
+  position: relative;
+}
+
+.project img {
+  height: 300px;
+  width: 300px;
+}
+
+img.project:hover {
+  opacity: .3;
+}
+
+img.project:hover span {
+  display: inherit;
+}
+
+.project p {
+  color: hsla(187, 40%, 16%, 1);
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  line-height: 20px;
+  margin: 140px 0;
+  width: 300px;
+  position: absolute;
 }
 
 #portfolio h1 {
@@ -114,9 +150,4 @@ img {
   margin: 50px auto;
   padding: 30px 0;
   width: 40%;
-}
-
-.portfolio-container img {
-  padding: 20px;
-  width: 300px;
 }
