@@ -67,11 +67,14 @@ img {
 
 .meet-container {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  height: 500px;
-  width: 70%;
-  margin: 30px auto;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 80px auto;
+}
+
+.meet-item {
+  margin: 10px 20px;
 }
 
 .bio {
@@ -140,6 +143,15 @@ img.project:hover span {
   margin: 140px 0;
   width: 300px;
   position: absolute;
+}
+
+#portfolio {
+  position: relative;
+}
+
+#portfolio-offset {
+  position: absolute;
+  top: -228px;
 }
 
 #portfolio h1 {
