@@ -1,10 +1,3 @@
-/* reset universal values */
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
 /* set page standards */
 
 html {
@@ -15,20 +8,27 @@ html {
   text-align: center;
 }
 
-/* style header section */
-
-header h1 {
-  border: 2px solid hsla(187, 20%, 40%, 1);
-  font-family: 'Permanent Marker', cursive;
-  font-size: 48px;
-  letter-spacing: 15px;
-  padding: 50px 0;
-  margin: 50px auto 0 auto;
-  width: 70%;
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-header a {
-  color: black;
+/* style header section */
+
+h1 {
+  border: 2px solid hsla(187, 20%, 40%, 1);
+  font-family: 'Permanent Marker', cursive;
+  font-size: 4.8rem;
+  letter-spacing: 1.5rem;
+  padding: 50px 200px;
+  margin: 50px auto 0 auto;
+  display: inline-block;
+}
+
+a {
+  color: inherit;
   text-decoration: none;
 }
 
@@ -39,9 +39,6 @@ header a:active h1{
 nav {
   background-color: white;
   border-bottom: 2px solid hsla(187, 15%, 50%, 1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   line-height: 170px;
   position: sticky;
   top: 0;
@@ -49,12 +46,10 @@ nav {
 }
 
 nav a {
-  color: black;
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: lighter;
-  letter-spacing: 8px;
+  letter-spacing: .8rem;
   margin: 0 80px;
-  text-decoration: none;
 }
 
 nav a:hover {
@@ -75,51 +70,45 @@ nav a:active {
 /* meet me section */
 
 img {
-  max-height: 300px;
+  height: 300px;
 }
 
 .meet-container {
-  display: flex;
   align-items: flex-start;
-  justify-content: center;
-  flex-wrap: wrap;
   margin: 80px auto;
 }
 
 .meet-item {
-  margin: 10px 20px;
+  margin: 0 20px;
 }
 
 .bio {
   background-color: hsla(187, 20%, 95%, 1);
   height: 300px;
   width: 450px;
-  position: relative;
 }
 
-.bio a {
+.bio a,
+.contact-container a {
   color: hsla(187, 15%, 50%, 1);
   font-weight: bold;
-  text-decoration: none;
 }
 
-.bio a:hover {
+.bio a:hover,
+.contact-container a:hover {
   color: hsla(187, 15%, 30%, 1);
 }
 
-.bio a:active {
+.bio a:active,
+.contact-container a:active {
   text-shadow: 1px 1px hsla(187, 15%, 50%, 1);
 }
 
 .bio p {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: lighter;
   line-height: 2em;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 300px;
+  padding: 50px;
 }
 
 #meet {
@@ -131,13 +120,17 @@ img {
 
 /* portfolio section */
 
+#portfolio h1,
+#contact h1 {
+  border: 1px solid hsla(187, 20%, 40%, 1);
+  font-size: 3.8rem;
+  padding: 30px 80px;
+}
+
 .portfolio-container,
 .contact-container {
   background-color: hsla(187, 40%, 95%, 1);
-  display: flex;
-  align-items: center;
   justify-content: space-around;
-  flex-wrap: wrap;
   margin: 50px auto;
   width: 80%;
 }
@@ -157,7 +150,7 @@ img {
 
 .project p {
   color: hsla(187, 40%, 16%, 1);
-  font-size: 32px;
+  font-size: 3.2rem;
   font-weight: bold;
   margin: 150px auto;
   text-align: center;
@@ -179,17 +172,6 @@ img.project:hover {
   top: -228px;
 }
 
-#portfolio h1,
-#contact h1 {
-  border: 1px solid hsla(187, 20%, 40%, 1);
-  font-family: 'Permanent Marker', cursive;
-  font-size: 36px;
-  letter-spacing: 12px;
-  margin: 50px auto;
-  padding: 30px 0;
-  width: 40%;
-}
-
 /* contact me section */
 
 .contact-container {
@@ -203,17 +185,4 @@ img.project:hover {
 
 i {
   margin-right: 10px;
-}
-
-.contact-container a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.contact-container a:hover {
-  color: hsla(187, 15%, 30%, 1);
-}
-
-.contact-container a:active {
-  font-weight: bold;
 }
