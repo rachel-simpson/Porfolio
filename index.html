@@ -2,16 +2,23 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rachel Simpson | Website Development Portfolio</title>
+  <!-- google fonts and fontawesome -->
   <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Muli:300,400" rel="stylesheet">
-  <link rel="stylesheet" href=".\styles\stylesheet.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <!-- stylesheets -->
+  <link rel="stylesheet" href=".\styles\reset.css">
+  <link rel="stylesheet" href=".\styles\style.css">
 </head>
 <body>
 
   <!-- header section -->
   <header>
-    <h1>Rachel Simpson.</h1>
+    <a href=#contact>
+      <h1>Rachel Simpson.</h1>
+    </a>
   </header>
 
   <!-- sticky navigation bar -->
@@ -29,7 +36,7 @@
         <img src="resources/images/train.jpg" alt="Rachel Simpson, Japan 2015">
       </div>
       <div class="meet-item bio">
-        <p>Hi, I'm Rachel Simpson and I'm currently studying a Diploma of Website Development. Here is a collection of the projects I've been working on in my studies this year.</p>
+        <p>Hi, I'm Rachel Simpson and I'm currently studying a Diploma of Website Development. Here is a collection of the projects I've been working on through <a href="https://codecademy.com" target="_blank">Codecademy</a> HTML and CSS courses.</p>
       </div>
     </div>
   </section>
@@ -40,30 +47,73 @@
     <span id="portfolio-offset"></span>
     <h1>Portfolio.</h1>
     <div class="portfolio-container">
-      <div class="project" id="excursion">
-
-        <a href="https://rachel-simpson.github.io/Excursion/" target="_blank">
-          <p>EXCURSION</p>
-          <img src="./resources/images/excursion.jpg" alt="Excursion Project" class="project">
+      <div class="project" id="trackster">
+        <a href="https://rachel-simpson.github.io/trackster/" target="_blank">
+          <p class="project-title">TRACKSTER</p>
+          <img src="./resources/images/trackster.png" alt="Excursion Project" class="project">
+        </a>
+      </div>
+      <div class="project" id="matchgame">
+        <a href="https://rachel-simpson.github.io/matchgame/" target="_blank">
+          <p class="project-title">MATCH<br />GAME</p>
+          <img src="./resources/images/matchgame.png" alt="Excursion Project" class="project">
+        </a>
+      </div>
+      <div class="project" id="jumpstart">
+        <a href="https://rachel-simpson.github.io/jumpstart/" target="_blank">
+          <p class="project-title">JUMPSTART</p>
+          <img src="./resources/images/jumpstart.png" alt="Excursion Project" class="project">
+        </a>
+      </div>
+      <div class="project" id="colmar">
+        <a href="https://rachel-simpson.github.io/colmar/" target="_blank">
+          <p class="project-title">COLMAR</p>
+          <img src="./resources/images/colmar.png" alt="Excursion Project" class="project">
+        </a>
+      </div>
+      <div class="project" id="tortoiseshell">
+        <a href="https://rachel-simpson.github.io/tortoiseshell/" target="_blank">
+          <p class="project-title">TORTOISE<br />SHELL</p>
+          <img src="./resources/images/tortoiseshell.png" alt="Excursion Project" class="project">
         </a>
       </div>
       <div class="project" id="mytimes">
         <a href="https://rachel-simpson.github.io/MyTimes/" target="_blank">
-          <p>MY TIMES</p>
+          <p class="project-title">MY TIMES</p>
           <img src="./resources/images/mytimes.PNG" alt="MYTimes Project" class="project">
         </a>
       </div>
       <div class="project" id="teacozy">
         <a href="https://rachel-simpson.github.io/TeaCozy/" target="_blank">
-          <p>TEA COZY</p>
+          <p class="project-title">TEA COZY</p>
           <img src="./resources/images/teacozy.jpg" alt="Tea Cozy Project" class="project">
         </a>
       </div>
-      <div class="project" id="broadway">
-        <a href="https://rachel-simpson.github.io/Broadway/" target="_blank">
-          <p>BROADWAY</p>
-          <img src="./resources/images/the-flatiron-building.png" alt="Broadway Project" class="project">
+      <div class="project" id="secretagentsupply">
+        <a href="https://rachel-simpson.github.io/secretagentsupply/" target="_blank">
+          <p class="project-title">SECRET<br />AGENT<br />SUPPLY</p>
+          <img src="./resources/images/secretagentsupply.png" alt="Broadway Project" class="project">
         </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- contact section -->
+  <section id="contact">
+    <span id="contact-offset"></span>
+    <h1>Contact Me.</h1>
+    <div class="contact-container">
+      <div class="contactinfo" id="phone">
+        <i class="fas fa-mobile-alt"></i>
+        <span>0430 035 398</span>
+      </div>
+      <div class="contactinfo" id="email">
+        <i class="far fa-envelope"></i>
+        <span><a href="mailto:missrachelsimpson@gmail.com">missrachelsimpson@gmail.com</a></span>
+      </div>
+      <div class="contactinfo" id="github">
+        <i class="fab fa-github-alt"></i>
+        <span><a href="http://www.github.com/rachel-simpson" target="_blank">github.com/rachel-simpson</a></span>
       </div>
     </div>
   </section>
