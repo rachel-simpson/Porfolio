@@ -207,4 +207,36 @@ i {
   #contact h1 {
     font-size: 2.4rem;
   }
+
+  .contact-container span {
+    display: block;
+    padding-top: 5px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  h1 {
+    padding: 20px;
+    width: 80%;
+  }
+
+  #portfolio h1,
+  #contact h1 {
+    padding: 20px;
+    width: 80%;
+  }
+
+  .meet-item {
+    height: auto;
+    width: 300px;
+  }
+
+  .meet-item img {
+    height: auto;
+    width: 300px;
+  }
+
+  .meet-item p {
+    padding: 5px;
+  }
 }
