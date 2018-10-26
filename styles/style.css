@@ -5,6 +5,7 @@ html {
   color: black;
   font-family: 'Muli', cursive;
   font-size: 10px;
+  min-width: 500px;
   text-align: center;
 }
 
@@ -22,9 +23,10 @@ h1 {
   font-family: 'Permanent Marker', cursive;
   font-size: 4.8rem;
   letter-spacing: 1.5rem;
-  padding: 50px 200px;
+  padding: 50px;
   margin: 50px auto 0 auto;
-  display: inline-block;
+  /* display: inline-block; */
+  width: 50%;
 }
 
 a {
@@ -79,7 +81,7 @@ img {
 }
 
 .meet-item {
-  margin: 0 20px;
+  margin: 10px 20px;
 }
 
 .bio {
@@ -124,7 +126,7 @@ img {
 #contact h1 {
   border: 1px solid hsla(187, 20%, 40%, 1);
   font-size: 3.8rem;
-  padding: 30px 80px;
+  padding: 30px 50px;
 }
 
 .portfolio-container,
@@ -185,4 +187,24 @@ img.project:hover {
 
 i {
   margin-right: 10px;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 1024px) {
+  nav {
+    flex-direction: column;
+    line-height: 70px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  h1 {
+    font-size: 3.8rem;
+  }
+
+  #portfolio h1,
+  #contact h1 {
+    font-size: 2.4rem;
+  }
 }
