@@ -239,4 +239,9 @@ i {
   .meet-item p {
     padding: 5px;
   }
+
+  .portfolio-container,
+  .contact-container {
+    width: 100%;
+  }
 }
